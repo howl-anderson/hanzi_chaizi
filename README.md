@@ -34,6 +34,6 @@ pytohn ./parse.py
 ```
 
 ## 致谢
-四角号码数据来自于 [漢語拆字字典](https://github.com/kfcd/chaizi)
+拆字数据来自于 [漢語拆字字典](https://github.com/kfcd/chaizi)
 
 
