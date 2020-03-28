@@ -12,7 +12,10 @@ class HanziChaizi(object):
 
     def query(self, input_char, default=None):
         result = self.data.get(input_char, default)
-        return result[0]
+        if result:
+            return result[0]
+        else:
+            return None
 
 
 if __name__ == "__main__":
