@@ -36,4 +36,18 @@ pytohn ./parse.py
 ## 致谢
 拆字数据来自于 [漢語拆字字典](https://github.com/kfcd/chaizi)
 
+## 学术引用 / Citation
+
+```
+@misc{kong2018hanzichaizi,
+  title={Hanzi Chaizi},
+  author={Xiaoquan Kong},
+  howpublished={https://github.com/howl-anderson/hanzi_chaizi},
+  year={2018}
+}
+```
+
+如果该软件包被书籍、研讨会和学术研究论文引用，或者在公司产品中使用，欢迎写邮件把这一个情况告诉我。我很高兴看到软件包能被使用，对大家有价值。
+
+If the package is cited in books, seminars, and academic research papers, or used in company products, you are welcome (but not required) to email me about this. I'm glad to see the package being used and valuable to everyone.
 
