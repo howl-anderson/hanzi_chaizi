@@ -7,7 +7,7 @@
 
 **这种特性可以被深度学习模型用来作为字的特征之一：字形的特征。**
 
-## [使用](chaizi/README.md)
+## [使用](https://github.com/kfcd/chaizi/blob/master/README.md)
 ### 样例 1
 ```python
 from hanzi_chaizi import HanziChaizi
