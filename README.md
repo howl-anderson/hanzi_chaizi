@@ -42,7 +42,7 @@ print(result)
 
 ## 安装方式
 ```bash
-pip install git+https://github.com/howl-anderson/hanzi_chaizi/fix_bug_and_char_type
+pip install git+https://github.com/ykf173/hanzi_chaizi.git@fix_bug_and_char_type
 ```
 
 
