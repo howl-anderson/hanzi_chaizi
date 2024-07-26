@@ -1,12 +1,14 @@
 # 汉字拆字
 
 > 拆字是指將一文字，以筆畫、字形等基本組成單位分解成多個文字。
+> 参数 char_type默认为0，取第一种拆分方式；char_type第二种，通常为偏旁部首拆分方式
 
 汉字拆字让字型相似的字具有相似的拆解结果。
 
 **这种特性可以被深度学习模型用来作为字的特征之一：字形的特征。**
 
-## 使用
+## [使用](chaizi/README.md)
+### 样例 1
 ```python
 from hanzi_chaizi import HanziChaizi
 
@@ -22,6 +24,26 @@ print(result)
 ['夕', '口']
 ```
 
+### 样例2:
+```python
+from hanzi_chaizi import HanziChaizi
+
+hc = HanziChaizi()
+result = hc.query('冰', char_type=1)
+
+print(result)
+```
+
+输出
+
+```text
+['冫', '水']
+```
+
+## 安装方式
+```bash
+pip install git+https://github.com/howl-anderson/hanzi_chaizi/fix_bug_and_char_type
+```
 
 
 ## 从原始数据生成
