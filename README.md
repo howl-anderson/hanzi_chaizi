@@ -1,12 +1,22 @@
-# 汉字拆字
+# Hanzi decomposition (Chinese character decomposition) | 汉字拆字
 
 > 拆字是指將一文字，以筆畫、字形等基本組成單位分解成多個文字。
+> The decomposition of characters refers to breaking down a single character into multiple characters based on its basic components, such as strokes and structural elements.
 
-汉字拆字让字型相似的字具有相似的拆解结果。
+> 汉字拆字让字型相似的字具有相似的拆解结果。
+> Hanzi decomposition yields similar decomposition results for characters with similar structures.
 
-**这种特性可以被深度学习模型用来作为字的特征之一：字形的特征。**
+> 这种特性可以被深度学习模型用来作为字的特征之一：字形的特征。
+> This feature can be used by deep learning models as one of the features of characters: the structural feature.
 
-## 使用
+## Installation
+
+```bash
+pip install hanzi_chaizi
+```
+
+## Usage
+
 ```python
 from hanzi_chaizi import HanziChaizi
 
@@ -16,7 +26,7 @@ result = hc.query('名')
 print(result)
 ```
 
-输出
+Output:
 
 ```text
 ['夕', '口']
@@ -24,19 +34,23 @@ print(result)
 
 
 
-## 从原始数据生成
-### 数据来源
-数据来自于 [漢語拆字字典](https://github.com/kfcd/chaizi)
+## Development
 
-### 解析
+### Data source
+
+Data from this project: [漢語拆字字典](https://github.com/kfcd/chaizi)
+
+### parsing and convert data format
+
 ```bash
-pytohn ./parse.py
+pytohn dev_scripts/parse.py
 ```
 
-## 致谢
-拆字数据来自于 [漢語拆字字典](https://github.com/kfcd/chaizi)
+## Credits
 
-## 学术引用 / Citation
+Data from this project: [漢語拆字字典](https://github.com/kfcd/chaizi)
+
+## Citation
 
 ```
 @misc{kong2018hanzichaizi,
@@ -46,8 +60,6 @@ pytohn ./parse.py
   year={2018}
 }
 ```
-
-如果该软件包被书籍、研讨会和学术研究论文引用，或者在公司产品中使用，欢迎写邮件把这一个情况告诉我。我很高兴看到软件包能被使用，对大家有价值。
 
 If the package is cited in books, seminars, and academic research papers, or used in company products, you are welcome (but not required) to email me about this. I'm glad to see the package being used and valuable to everyone.
 
