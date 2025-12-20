@@ -32,23 +32,13 @@ Output:
 ['夕', '口']
 ```
 
-
-
 ## Development
 
-### Data source
-
-Data from this project: [漢語拆字字典](https://github.com/kfcd/chaizi)
-
-### parsing and convert data format
-
-```bash
-pytohn dev_scripts/parse.py
-```
+See [develop.md](develop.md) for development guide.
 
 ## Credits
 
-Data from this project: [漢語拆字字典](https://github.com/kfcd/chaizi)
+Data from [漢語拆字字典](https://github.com/kfcd/chaizi) (CC BY 3.0)
 
 ## Citation
 
@@ -62,4 +52,3 @@ Data from this project: [漢語拆字字典](https://github.com/kfcd/chaizi)
 ```
 
 If the package is cited in books, seminars, and academic research papers, or used in company products, you are welcome (but not required) to email me about this. I'm glad to see the package being used and valuable to everyone.
-

@@ -1,7 +1,22 @@
+# Build
 build/
 dist/
-.venv/
-.idea/
-.pytest_cache/
-*/**/__pycache__/
 *.egg-info/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Test
+.pytest_cache/
+.coverage
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# uv
+.venv/
+.ruff_cache/
+uv.lock

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hanzi_chaizi"
+version = "0.4.0"
+description = "Chinese character decomposition tools for breaking down characters into basic structural units"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [
+    { name = "Xiaoquan Kong", email = "u1mail2me@gmail.com" }
+]
+keywords = ["chinese", "hanzi", "nlp", "character-decomposition", "deep-learning"]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/howl-anderson/hanzi_chaizi"
+Repository = "https://github.com/howl-anderson/hanzi_chaizi"
+Issues = "https://github.com/howl-anderson/hanzi_chaizi/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hanzi_chaizi"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "hanzi_chaizi/**",
+    "README.md",
+    "LICENSE",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
