@@ -23,7 +23,7 @@ jobs:
         run: uv python install ${{ matrix.python-version }}
 
       - name: Run tests
-        run: uv run --python ${{ matrix.python-version }} pytest tests -v
+        run: uv run --python ${{ matrix.python-version }} --extra dev pytest tests -v
 
   lint:
     runs-on: ubuntu-latest
