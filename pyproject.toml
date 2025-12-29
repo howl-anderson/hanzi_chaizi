@@ -13,6 +13,12 @@ authors = [
 ]
 keywords = ["chinese", "hanzi", "nlp", "character-decomposition", "deep-learning"]
 requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
 
 [project.urls]
 Homepage = "https://github.com/howl-anderson/hanzi_chaizi"
